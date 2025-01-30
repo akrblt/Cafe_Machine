@@ -140,6 +140,7 @@ class CoffeeMachineApp:
 
         tk.Button(add_window, text="Ajouter", command=add_resources).grid(row=4, column=0, columnspan=2, pady=10)
 
+      #fonction definir pour macjine nettoayer
     def clean_machine(self):
         self.machine.clean_machine()
         messagebox.showinfo("Nettoyage", "La machine a été nettoyée avec succès !")
