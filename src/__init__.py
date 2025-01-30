@@ -158,6 +158,7 @@ class CoffeeMachineApp:
         self.canvas.create_line(170, 130, 170, 100, fill="gray", width=2)
 
 
+
 # Lancer l'application
 if __name__ == "__main__":
     root = tk.Tk()
