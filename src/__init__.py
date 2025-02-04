@@ -157,6 +157,8 @@ class CoffeeMachineApp:
         self.canvas.create_line(130, 130, 130, 100, fill="gray", width=2)
         self.canvas.create_line(150, 130, 150, 100, fill="gray", width=2)
         self.canvas.create_line(170, 130, 170, 100, fill="gray", width=2)
+        #
+        #
 
 
 
