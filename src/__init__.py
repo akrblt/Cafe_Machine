@@ -101,7 +101,7 @@ class CoffeeMachineApp:
             f"Grains de café : {self.machine.coffee_beans} g\n"
             f"Lait : {self.machine.milk} ml\n"
             f"Sucre : {self.machine.sugar} g\n"
-            f"Solde : {self.machine.balance}€\n"
+            f"Solde : {self.machine.balance }€\n"
             f"Nombre de boissons préparées depuis le dernier nettoyage : {self.machine.maintenance_count}"
         )
         messagebox.showinfo("État des Ressources", status)
