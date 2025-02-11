@@ -108,7 +108,7 @@ class CoffeeMachineApp:
 
     def add_resources_window(self):
         add_window = tk.Toplevel(self.root)
-        add_window.title("Ajouter des Ressources")
+        add_window.title("Ajouter des  Ressources")
 
         tk.Label(add_window, text="Eau (ml) :").grid(row=0, column=0, padx=5, pady=5)
         water_entry = tk.Entry(add_window)
