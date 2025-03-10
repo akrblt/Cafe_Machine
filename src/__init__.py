@@ -13,6 +13,7 @@ class CoffeeMachine:
         self.balance = 0.0  # virtual payment balance (in euros)
 
         # Menu for different drinks with their ingredients and price
+        #Sprint 1
         self.menu = {
             "Espresso": {"water": 50, "coffee_beans": 18, "milk": 0, "price": 1.5, "color": "brown"},
             "Ristretto": {"water": 30, "coffee_beans": 18, "milk": 0, "price": 1.7, "color": "darkred"},
@@ -74,6 +75,7 @@ class CoffeeMachine:
         self.sugar += sugar
 
     def clean_machine(self):
+        # sprint 1
         # Clean the machine by resetting the maintenance counter
         self.maintenance_count = 0
 
@@ -86,6 +88,7 @@ class CoffeeMachineApp:
         self.create_widgets()  # Create the user interface widgets
 
     def create_widgets(self):
+        # sprint1
         # Create widgets for the main window
         tk.Label(self.root, text="Coffee Machine", font=("Helvetica", 16, "bold")).pack(pady=10)
 
@@ -231,11 +234,13 @@ class CoffeeMachineApp:
         add_button.grid(row=4, columnspan=2, pady=10)
 
     def clean_machine(self):
+        #sprint 1
         # Clean the machine and reset maintenance counter
         self.machine.clean_machine()
         messagebox.showinfo("Machine Cleaned", "The machine has been successfully cleaned!")
 
     def show_coffee_cup(self, drink, size):
+        # sprint 1
         # Show an animated coffee cup being filled
         self.canvas.delete("all")  # Clear the canvas
         size_mapping = {1: 50, 2: 100, 3: 150}  # Size to height mapping
