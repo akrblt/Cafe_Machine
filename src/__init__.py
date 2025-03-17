@@ -44,6 +44,7 @@ class CoffeeMachine:
         return True, None
 
     def prepare_drink(self, drink, size):
+        # sprint 2
         # Prepare the selected drink if there are enough resources
         drink_data = self.menu[drink]
         water_required = drink_data["water"] * size
@@ -68,6 +69,7 @@ class CoffeeMachine:
         return f"{drink} ({size} dl) prepared successfully!"
 
     def add_resources(self, water, coffee_beans, milk, sugar):
+        # sprint 2
         # Add resources to the machine
         self.water += water
         self.coffee_beans += coffee_beans
@@ -119,6 +121,7 @@ class CoffeeMachineApp:
         self.canvas.pack(pady=10)
 
     def show_size_and_payment_window(self, drink):
+        # sprint 2
         # Show a window for selecting the size of the drink
         size_window = tk.Toplevel(self.root)
         size_window.title(f"Select Size for {drink}")
@@ -148,6 +151,7 @@ class CoffeeMachineApp:
             btn.pack(pady=5)
 
     def process_payment(self, method, size, drink, payment_window):
+        # sprint 2
         # Calculate the price based on the selected drink and size
         price = self.machine.menu[drink]["price"]
 
@@ -177,6 +181,7 @@ class CoffeeMachineApp:
             messagebox.showerror("Payment Failed", "Payment was not completed.")
 
     def prepare_drink(self, drink, size):
+        # sprint 2
         # Prepare the selected drink and show the result
         result = self.machine.prepare_drink(drink, size)
         messagebox.showinfo("Preparation", result)
@@ -218,6 +223,7 @@ class CoffeeMachineApp:
         sugar_entry.grid(row=3, column=1, padx=5, pady=5)
 
         def add_resources():
+            # sprint 2
             # Add resources to the machine after valid input
             try:
                 water = int(water_entry.get() or 0)
